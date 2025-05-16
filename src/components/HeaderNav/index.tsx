@@ -2,25 +2,28 @@ import { House, Option, Scroll } from '@phosphor-icons/react'
 import style from './style.module.css'
 import HeaderNavItens from '../HeaderNavItens'
 
-function HeaderNav() {
-  const iconsSize = 18
+type HeaderNavProps = {
+  menuIconSize?: number
+}
+
+function HeaderNav({ menuIconSize = 18 }: HeaderNavProps) {
   return (
     <nav className={style.menu__wrapper}>
       <ul>
         <HeaderNavItens src='#'>
-          <House size={iconsSize} color="#1f1f1f" weight="fill" />
+          <House size={menuIconSize} color="#1f1f1f" weight="fill" />
           Inicio
         </HeaderNavItens>
         <HeaderNavItens src='#'>
-            <Scroll size={iconsSize} color="#1f1f1f" weight="fill" />
+            <Scroll size={menuIconSize} color="#1f1f1f" weight="fill" />
             Contratos
         </HeaderNavItens>
         <HeaderNavItens src='#'>
-            <Option size={iconsSize} color="#1f1f1f" weight="fill" />
+            <Option size={menuIconSize} color="#1f1f1f" weight="fill" />
             Opção A
         </HeaderNavItens>
         <HeaderNavItens src='#'>
-            <Option size={iconsSize} color="#1f1f1f" weight="fill" />
+            <Option size={menuIconSize} color="#1f1f1f" weight="fill" />
             Opção B
         </HeaderNavItens>
       </ul>
