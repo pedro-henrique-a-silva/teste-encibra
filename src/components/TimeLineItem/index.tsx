@@ -16,8 +16,9 @@ function TimeLineItem({ item, handleEventTimeLineItemClick, selectedEvents }: Ti
     <div className={style.item__container}>
       <p className={style.timeline_item__status}>{item.title}</p>
       <p className={style.timeline_item__date}>{item.date}</p>
-      <div className={isSelected ? style.timeline_item__icon__pressed : style.timeline_item__icon} onClick={() => handleEventTimeLineItemClick(item)}>
-        <ImageSquare size={32} color="#fbeb0b" />
+      <div className={`${style.timeline_item__icon} ${isSelected ? style.timeline_item__icon__pressed : style.timeline_item__icon__default}`} 
+        onClick={() => handleEventTimeLineItemClick(item)}>
+        <ImageSquare size={32} color="#E3A600" />
       </div>
     </div>
   )

@@ -50,18 +50,20 @@
 
 .timeline_item__icon {
   border-radius: 50%;
-  background-color: white;
   z-index: 999;
-  border: 2px solid rgb(232, 232, 232);
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 
-.timeline_item__icon__pressed {
-  background-color: #fbeb0b;
-  border-radius: 50%;
-  z-index: 999;
+.timeline_item__icon__default {
+  background-color: white;
   border: 2px solid rgb(232, 232, 232);
-  cursor: pointer;
+}
+
+.timeline_item__icon__pressed {
+  background-color: var(--yelloy-color);
+  border: 2px solid var(--yelloy-color);
 }
 
 .timeline_item__icon__pressed svg {
@@ -69,7 +71,8 @@
 }
 
 .timeline_item__icon:hover {
-  background-color: #fbeb0b;
+  background-color: var(--yelloy-color);
+  border: 2px solid var(--yelloy-color);
   transition: all 0.3s ease-in-out;
 }
 
