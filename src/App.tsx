@@ -40,10 +40,10 @@ function App() {
       const eventsData = await fetchData('/topview');
 
       eventsData.sort((a: TimeLineItemType, b: TimeLineItemType) => {
-        const dateA =  parse(a.date, 'dd/MM/yyyy', new Date());
-        const dateB = parse(b.date, 'dd/MM/yyyy', new Date());
+        const dateEventA =  parse(a.date, 'dd/MM/yyyy', new Date());
+        const dateEventB = parse(b.date, 'dd/MM/yyyy', new Date());
 
-        return dateA.getTime() - dateB.getTime();
+        return dateEventA.getTime() - dateEventB.getTime();
       })
 
       setEvents(eventsData);
