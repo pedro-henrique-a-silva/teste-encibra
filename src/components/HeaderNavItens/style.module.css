@@ -1,0 +1,12 @@
+.menu_item__wrapper{
+  list-style: none;
+}
+
+.menu_item__wrapper a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
