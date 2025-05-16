@@ -1,0 +1,18 @@
+.timeline__button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.timeline__button__previous {
+  background: none;
+}
+
+.timeline__button__next {
+  background: none;
+}
+
+.timeline__button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
