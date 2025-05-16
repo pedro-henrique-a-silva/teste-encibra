@@ -18,7 +18,6 @@ function Footer() {
           <span></span>
           Encibra 2025 Todos os direitos reservados
         </span>
-
       </div>
     </footer>
   )
