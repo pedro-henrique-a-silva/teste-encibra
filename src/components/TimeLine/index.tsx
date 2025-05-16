@@ -22,12 +22,12 @@ function TimeLine({
 }: TimeLineItemProps) {
   const timelineRef = useRef<HTMLDivElement | null>(null);
 
-  const scroll = (direction: 'left' | 'right') => {
-    const container = timelineRef.current;
+  const scrollTimeline = (direction: 'left' | 'right') => {
+    const timelineContainer = timelineRef.current;
     const scrollAmount = 300;
 
-    if (container) {
-      container.scrollBy({
+    if (timelineContainer) {
+      timelineContainer.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth',
       });
@@ -39,7 +39,7 @@ function TimeLine({
     <div className={style.timeline__container}>
       <TimeLineTitle title={"Linha do tempo | Vista Superior"} />
       <div className={style.timeline__wrapper}>
-        <ArrowButton scroll={scroll} type={'left'}/>
+        <ArrowButton scroll={scrollTimeline} type={'left'}/>
 
         <div ref={timelineRef} className={style.timeline__wrapper_overflow}>
           <div className={style.timeline}>
@@ -54,7 +54,7 @@ function TimeLine({
           </div>
         </div>
 
-        <ArrowButton scroll={scroll} type={'right'}/>
+        <ArrowButton scroll={scrollTimeline} type={'right'}/>
       </div>
       <button
         onClick={handleGenerateSlider}
