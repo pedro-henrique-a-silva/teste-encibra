@@ -1,9 +1,10 @@
 import { useRef } from 'react';
 import TimeLineItem from '../TimeLineItem';
 import style from './style.module.css'
-import { Clock, ImageSquare } from '@phosphor-icons/react';
+import { ImageSquare } from '@phosphor-icons/react';
 import type { SelectedEventType, TimeLineItemType } from '../../types';
 import ArrowButton from '../ArrowButton';
+import TimeLineTitle from '../TImeLineTitle';
 
 type TimeLineItemProps = {
   events: TimeLineItemType[]
@@ -36,10 +37,7 @@ function TimeLine({
 
   return (
     <div className={style.timeline__container}>
-      <h2 className={style.timeline__title}>
-        <Clock size={32} color="#1f1f1f" weight="fill" />
-        Linha do tempo | Vista Superior
-      </h2>
+      <TimeLineTitle title={"Linha do tempo | Vista Superior"} />
       <div className={style.timeline__wrapper}>
         <ArrowButton scroll={scroll} type={'left'}/>
 
