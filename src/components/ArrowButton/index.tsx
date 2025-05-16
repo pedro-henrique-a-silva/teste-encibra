@@ -1,5 +1,5 @@
 import style from './style.module.css'
-import { ArrowCircleLeft, ArrowCircleRight } from '@phosphor-icons/react'
+import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
 
 type ArrowButtonProps = {
   scroll: (direction: 'left' | 'right') => void
@@ -13,9 +13,9 @@ function ArrowButton({scroll, type}: ArrowButtonProps) {
       onClick={() => scroll(type)}
       >
       {type === 'left' ? (
-        <ArrowCircleLeft size={40} color="#1f1f1f" weight="fill" />
+        <ArrowLeft size={24} color="#1f1f1f" weight="bold" />
       ) : (
-        <ArrowCircleRight size={40} color="#1f1f1f" weight="fill" />
+        <ArrowRight size={24} color="#1f1f1f" weight="bold" />
       )}
     </button>
   )
