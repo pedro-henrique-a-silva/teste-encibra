@@ -4,6 +4,7 @@ import type { SelectedEventType, TimeLineItemType } from './types';
 import TimeLine from './components/TimeLine';
 import Header from './components/Header';
 import PageTitle from './components/PageTitle';
+import Footer from './components/Footer';
 
 const eventsMockData = [
   { 
@@ -130,6 +131,7 @@ function App() {
       {showSlider && (
          <ImageComparisson selectedEvents={selectedEvents} />
       )}
+      <Footer />
     </>
   )
 }
