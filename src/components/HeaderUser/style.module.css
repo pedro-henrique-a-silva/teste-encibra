@@ -1,0 +1,47 @@
+.header_user_info__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+}
+
+.header_user_info__wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.header_user_info__wrapper:hover {
+  border: 1px solid rgb(240, 234, 234);
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header_menu_hanburguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--yelloy-color);
+}
+
+.header_menu_hanburguer:hover {
+  background-color: var(--yelloy-color-200);
+}
+
+.header_menu_encibra_name {
+  font-size: 0.7rem;
+  border: 1px solid rgb(236, 234, 234);
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+}
+
+.header_menu_user_name {
+  font-size: 0.8rem;
+  color: var(--yelloy-color-secondary);
+}
