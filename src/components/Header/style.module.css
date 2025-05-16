@@ -1,0 +1,20 @@
+.menu__wrapper_left_side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu__wrapper_right_side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
