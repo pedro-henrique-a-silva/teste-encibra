@@ -6,6 +6,7 @@ import Header from './components/Header';
 import PageTitle from './components/PageTitle';
 import Footer from './components/Footer';
 import { fetchData } from './api/api';
+import { parse } from 'date-fns';
 
 function App() {
   const [events, setEvents] = useState<TimeLineItemType[]>([])
@@ -37,6 +38,13 @@ function App() {
   useEffect(() => {
     const getEventsFromApi = async () => {
       const eventsData = await fetchData('/topview');
+
+      eventsData.sort((a: TimeLineItemType, b: TimeLineItemType) => {
+        const dateA =  parse(a.date, 'dd/MM/yyyy', new Date());
+        const dateB = parse(b.date, 'dd/MM/yyyy', new Date());
+
+        return dateA.getTime() - dateB.getTime();
+      })
 
       setEvents(eventsData);
     }
