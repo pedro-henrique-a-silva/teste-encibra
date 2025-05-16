@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# Test Encibra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o projeto de teste feito para **Encibra**, desenvolvido para fins de teste e aprendizado. Ele serve como base para explorar conceitos e práticas de desenvolvimento de software. O projeto é simula uma funcionalidade onde é possível visualizar e comparar duas imagens em uma linha do tempo. Sendo possível escolher qualquer ponto da linha do tempo e comparar com qualquer outro ponto da linha do tempo.
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A estrutura do projeto é organizada para facilitar a manutenção e o entendimento do código. O projeto foi bem componentizado com o intuito de facilitar possiveis upgrades ou modificações.
 
-## Expanding the ESLint configuration
+## Tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Projeto desenvolvido com React na versão 19 e algumas bibliotecas auxiliares como a phosphor icos para os icones do projeto, e a lib react-compare-slider para comparar duas imagens.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Como Executar
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone o repositório:
+  ```bash
+  git clone https://github.com/seu-usuario/test-encibra.git
+  ```
+2. Instale as dependências:
+  ```bash
+  [Comando para instalar dependências]
+  ```
+3. Execute o projeto:
+  ```bash
+  [Comando para executar o projeto]
+  ```
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
