@@ -1,14 +1,16 @@
 # Test Encibra
 
-Este é o projeto de teste feito para **Encibra**, desenvolvido para fins de teste e aprendizado. Ele serve como base para explorar conceitos e práticas de desenvolvimento de software. O projeto é simula uma funcionalidade onde é possível visualizar e comparar duas imagens em uma linha do tempo. Sendo possível escolher qualquer ponto da linha do tempo e comparar com qualquer outro ponto da linha do tempo.
+Este é o projeto de teste feito para **Encibra**, desenvolvido para fins de teste e aprendizado. Ele serve como base para explorar conceitos e práticas de desenvolvimento de software. O projeto simula uma funcionalidade onde é possível visualizar e comparar duas imagens em uma linha do tempo, sendo possível escolher qualquer ponto da linha do tempo e comparar com qualquer outro ponto da linha do tempo.
 
 ## Estrutura do Projeto
 
-A estrutura do projeto é organizada para facilitar a manutenção e o entendimento do código. O projeto foi bem componentizado com o intuito de facilitar possiveis upgrades ou modificações.
+A estrutura do projeto é organizada para facilitar a manutenção e o entendimento do código. O projeto foi bem componentizado com o intuito de facilitar possíveis upgrades ou modificações.
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
-Projeto desenvolvido com React na versão 19 e algumas bibliotecas auxiliares como a phosphor icos para os icones do projeto, e a lib react-compare-slider para comparar duas imagens.
+Projeto desenvolvido com React na versão 19 e algumas bibliotecas auxiliares, como a Phosphor Icons para os ícones do projeto, e a biblioteca react-compare-slider para comparar duas imagens.
+
+Também foi utilizada a biblioteca json-server para simular um servidor retornando os dados necessários para a aplicação.
 
 
 
@@ -20,11 +22,15 @@ Projeto desenvolvido com React na versão 19 e algumas bibliotecas auxiliares co
   ```
 2. Instale as dependências:
   ```bash
-  [Comando para instalar dependências]
+  npm install
   ```
-3. Execute o projeto:
+3. Iniciar o servidor do json-server:
   ```bash
-  [Comando para executar o projeto]
+  npm run json-server
+  ```
+4. Execute o projeto:
+  ```bash
+  npm run dev
   ```
 
 ## Licença
