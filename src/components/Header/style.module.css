@@ -4,6 +4,10 @@
   gap: 1rem;
 }
 
+.menu__wrapper_left_side img {
+  height: 2rem;
+}
+
 .menu__wrapper_right_side {
   display: flex;
   align-items: center;
